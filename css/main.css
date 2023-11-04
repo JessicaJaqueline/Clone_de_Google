@@ -1,0 +1,237 @@
+body{
+    /*margin: poner el margen del elemento*/
+    margin: 0;
+    /* padding - "margen" hacia dentro   */
+    padding: 0;
+    /* Fuentes del texto */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
+
+/* *********************************************************************** */
+/* *********************************************************************** */
+/* ****************************************************** */
+/* Navegacion */
+
+header{
+    /* width  ancho // height alto */
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    /* Justificar a la derecha */
+    /* Nos habilita usar los comandos flex-end. flex-start */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    /* Eliminar los puntos de la lista */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* Centrado verticalmente */
+    align-items: center;
+}
+
+a{
+    /* Eliminar lìnea debajo del texto */
+    text-decoration: none;
+}
+
+nav .nav-right-section a{
+    color: black;
+    margin-right: 20px;
+}
+
+/* Icono del Menu */
+nav .nav-right-section .menu{
+    /* Agregar iconos desde css */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen este contenida en el elemento màs grande */
+    background-size: contain;
+    width: 40px;
+    height: 20px;
+    /* Para que las imagenes no se repitan */
+    background-repeat: no-repeat;
+}
+
+/* Imagen del usuario */
+nav .nav-right-section img{
+    /* Redondeamos bordes */
+    border-radius: 100%;
+}
+
+/* ********************************************************************* */
+/* ******************************************************* */
+/* ******************************************* */
+
+main{
+    /* Agregar espacio entre header y main */
+    margin-top: 200px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    /* Centar absolutamente gracias a los margenes automaticos */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+}
+
+main .main-logo img{
+    height: 100px;
+}
+
+main .main-input{
+    width: 530px;
+    /* Centar absolutamente gracias a los margenes automaticos */
+    /* Vertical // Horizontal */
+    margin: 0 auto;
+}
+
+main .main-input-container{
+    /* ancho borde // borde estilo // borde color */
+    border: 1px solid #dfe1e5;
+    border-radius: 25px;
+    width: 550px;
+    margin: 0 auto;
+}
+main .main-input-container:hover{
+    box-shadow: 2px 2px 2px 2px rgb(105, 103, 103);
+}
+
+main .main-input input{
+    height: 35px;
+    /* Quitar el borde */
+    border: none;
+    /* Quitar el borde cuando esta activo eñ input */
+    outline: none;
+    width: 450px;
+}
+
+
+main .main-input .search-icon{ 
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    padding-left: 7%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    background-size: contain;
+    padding-left: 10px; 
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    background-size: contain;
+    padding-right: 10%;
+    background-repeat: no-repeat;
+}
+
+main .Boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+main .Boton button:hover{
+    /* Sombrear las cajas */
+    box-shadow: 1px 1px 1px 1px rgb(105, 105, 105);
+}
+
+main .Boton .Buscar{
+    border-radius: 2px;
+    margin-right: 30px;
+    padding: 7px;
+    border-color: #dfe1e5;
+}
+
+main .Boton .Buscar{
+    color: black;
+}
+
+main .Noticia{
+    color: black;
+}
+
+main .Boton .Suerte{
+    border-radius: 2px;
+    padding: 7px;
+    border-color: #dfe1e5;
+}
+
+
+/* ********************************************************************* */ 
+/* ******************************************************* */
+/* ******************************************* */
+/* NOTICIA */
+main .Noticia{
+    display: flex;
+    justify-content: center;    
+    font-size: 11px;
+    text-decoration-line: none;
+}
+
+/* ********************************************************************* */
+/* ******************************************************* */
+/* ******************************************* */
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 82px;
+    position: absolute;
+    bottom: 0;
+    background: #f2f2f2;
+}
+
+footer .PiePag1,
+footer .PiePag2{
+    height: 50%;
+    color: rgb(37, 37, 37);
+    font-size: 15px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+footer .PiePag1{
+    justify-content: flex-start;
+    border: 1px solid #e4e4e4;
+}
+
+footer .PiePag2{
+    justify-content: space-between;
+}
+
+footer ul li{
+    /* display inline-establece que un elemento ocupará el espacio del contenido del mismo y el siguiente elemento se situará a la derecha. */
+    display: inline;
+}
+
+footer .PiePag2 a{
+    color: #5f6368;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+/* last-child - representa el último elemento entre un grupo de elementos hermanos.  */
+footer .PiePag2 ul li:last-child a{
+    margin: 0;
+}
+
